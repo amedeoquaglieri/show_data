@@ -9,6 +9,8 @@ def main(page: ft.Page):
     c.execute("SELECT * FROM customers")
     items = c.fetchall()
 
+    page.add(ft.Text("Show Data", size=15, color=ft.colors.BLACK))
+
     for item in items:
         page.add(
             ft.Text(item, size=20, color=ft.colors.ORANGE)
