@@ -19,5 +19,6 @@ def main(page: ft.Page):
     conn.commit()
     conn.close()
 
+    page.update()
 
 ft.app(main)
